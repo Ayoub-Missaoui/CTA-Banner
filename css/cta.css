@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "TT-Commons";
+    src: url("../_fonts/TTCommonsPro/TT_Commons_Pro_Normal.otf") format('opentype');
+}
+@font-face {
+    font-family: "TT-Commons-Demibold";
+    src: url("../_fonts/TTCommonsPro/TT_Commons_Pro_DemiBold.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "GTAlpina";
+    src: url("../_fonts/GTAlpina/GTAlpina-Light.otf") format('opentype');
+}
+
+/* Cta-sectie */
+.banner-section {
+    display: flex;
+    flex-direction: row;
+    width: 1440px; /* Breedte van de sectie */
+    height: 720px; /* Hoogte van de sectie */
+    color: #FFFFFF; /* Tekstkleur */
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 720px; /* Breedte van de linkerinhoud */
+    height: 720px; /* Hoogte van de linkerinhoud */
+    background-color: #FFDFB2; /* Achtergrondkleur van de linkerinhoud */
+    padding: 0 64px; /* Binnenste vulling (boven, rechts, onder, links) */
+    gap: 24px; /* Ruimte tussen de elementen */
+}
+
+.cta-title {
+    width: 592px; /* Breedte van de titel */
+    height: 97px; /* Hoogte van de titel */
+    color: #1B2426; /* Tekstkleur van de titel */
+    font-family: "TT-Commons"; /* Lettertype van de titel */
+    font-weight: 600; /* Lettertype dikte van de titel */
+    font-size: 40px; /* Tekengrootte van de titel */
+    line-height: 48px; /* Regelhoogte van de titel */
+    letter-spacing: -3%; /* Letterafstand van de titel */
+    text-align: center; /* Uitlijning van de titel */
+}
+
+.cta-title > span {
+    font-family: "GTAlpina"; /* Lettertype van het span-element binnen de titel */
+    font-weight: 300; /* Lettertype dikte van het span-element binnen de titel */
+    font-size: 42px; /* Tekengrootte van het span-element binnen de titel */
+    line-height: 48px; /* Regelhoogte van het span-element binnen de titel */
+    letter-spacing: -3%; /* Letterafstand van het span-element binnen de titel */
+    text-align: center; /* Uitlijning van het span-element binnen de titel */
+}
+
+.cta-body {
+    width: 592px; /* Breedte van de body */
+    height: 24px; /* Hoogte van de body */
+    gap: 0px;
+    opacity: 0.8; /* Doorzichtigheid van de body */
+    color: #1B2426; /* Tekstkleur van de body */
+    font-family: "TT-Commons"; /* Lettertype van de body */
+    font-weight: 450; /* Lettertype dikte van de body */
+    font-size: 19px; /* Tekengrootte van de body */
+    line-height: 24px; /* Regelhoogte van de body */
+    text-align: Center; /* Uitlijning van de body */
+}
+
+.cta-button {
+    background-color: #BF564D; /* Achtergrondkleur van de knop */
+    color: #fff; /* Tekstkleur van de knop */
+    width: 227px; /* Breedte van de knop */
+    height: 56px; /* Hoogte van de knop */
+    padding: 14px 32px; /* Binnenste vulling (boven, rechts, onder, links) van de knop */
+    gap: 4px; /* Ruimte tussen de elementen van de knop */
+    border-radius: 4px; /* Afgeronde hoeken van de knop */
+    border: none; /* Geen rand rondom de knop */
+}
+
+.cta-button:hover {
+    background-color: #A6433A; /* Achtergrondkleur van de knop bij hover */
+}
+
+.cta-button:focus {
+    background: #59201B; /* Achtergrondkleur van de knop bij focus */
+}
+
+.cta-button:disabled {
+    background: #1B242680; /* Achtergrondkleur van de knop bij uitgeschakelde toestand */
+}
+
+.cta-button-text {
+    width: 135px; /* Breedte van de tekst in de knop */
+    font-family: "TT-Commons-Demibold"; /* Lettertype van de tekst in de knop */
+    font-weight: 600; /* Lettertype dikte van de tekst in de knop */
+    font-size: 19px; /* Tekengrootte van de tekst in de knop */
+    line-height: 24px; /* Regelhoogte van de tekst in de knop */
+}
+
+.right-image {
+    width: 720px; /* Breedte van de rechterafbeelding */
+    height: 720px; /* Hoogte van de rechterafbeelding */
+    gap: 12px; /* Ruimte tussen de elementen van de rechterafbeelding */
+    aspect-ratio: 1/1; /* Behoudt de aspectverhouding van de afbeelding */
+}
+
+.right-image img {
+    width: 100%; /* Breedte van de afbeelding */
+    height: 100%; /* Hoogte van de afbeelding */
+    object-fit: cover; /* Schaal de afbeelding zodat deze het hele gebied bedekt */
+}
+
+
+/* Media query voor mobiele apparaten */
+@media only screen and (max-width: 375px) {
+    .banner-section {
+         flex-direction: column-reverse; /* Kolommen op mobiele apparaten, omgekeerde volgorde */
+         width: 375px; /* Breedte van de sectie op mobiele apparaten */
+         height: 600px; /* Hoogte van de sectie op mobiele apparaten */
+    }
+    
+    .left-content {
+        width: 375px; /* Breedte van de linkerinhoud op mobiele apparaten */
+        height: 300px; /* Hoogte van de linkerinhoud op mobiele apparaten */
+        background-color: #FFDFB2; /* Achtergrondkleur van de linkerinhoud op mobiele apparaten */
+        padding: 0px 20px; /* Binnenste vulling (boven, rechts, onder, links) van de linkerinhoud op mobiele apparaten */
+        gap: 16px; /* Ruimte tussen de elementen van de linkerinhoud op mobiele apparaten */
+    }
+    
+    .cta-title {
+        width: 335px; /* Breedte van de titel op mobiele apparaten */
+        height: 80px; /* Hoogte van de titel op mobiele apparaten */
+        font-size: 36px; /* Tekengrootte van de titel op mobiele apparaten */
+        line-height: 40px; /* Regelhoogte van de titel op mobiele apparaten */
+        letter-spacing: -2%; /* Letterafstand van de titel op mobiele apparaten */
+    }
+    
+    .cta-title > span {
+        font-size: 38px; /* Tekengrootte van het span-element binnen de titel op mobiele apparaten */
+    }
+    
+    .cta-body {
+        width: 335px; /* Breedte van de body op mobiele apparaten */
+        height: 24px; /* Hoogte van de body op mobiele apparaten */
+        opacity: 0.8; /* Doorzichtigheid van de body op mobiele apparaten */
+        font-weight: 450; /* Lettertype dikte van de body op mobiele apparaten */
+        font-size: 17px; /* Tekengrootte van de body op mobiele apparaten */
+    }
+    
+    .cta-button {
+        width: 189px; /* Breedte van de knop op mobiele apparaten */
+        height: 48px; /* Hoogte van de knop op mobiele apparaten */
+        padding: 11px 20px 13px; /* Binnenste vulling (boven, rechts, onder, links) van de knop op mobiele apparaten */
+    }
+    
+    .cta-button-text {
+        width: 121px; /* Breedte van de tekst in de knop op mobiele apparaten */
+        height: 24px; /* Hoogte van de tekst in de knop op mobiele apparaten */
+        font-family: "TT-Commons-Demibold"; /* Lettertype van de tekst in de knop op mobiele apparaten */
+        font-weight: 600; /* Lettertype dikte van de tekst in de knop op mobiele apparaten */
+        font-size: 17px; /* Tekengrootte van de tekst in de knop op mobiele apparaten */
+    }
+    
+    .right-image {
+        width: 375px; /* Breedte van de rechterafbeelding op mobiele apparaten */
+        height: 300px; /* Hoogte van de rechterafbeelding op mobiele apparaten */
+        gap: 12px; /* Ruimte tussen de elementen van de rechterafbeelding op mobiele apparaten */
+        aspect-ratio: 4/3; /* Behoudt de aspectverhouding van de afbeelding op mobiele apparaten */
+    }
+}
